@@ -41,8 +41,8 @@ Le deploiement automatisé du CS Docker Engine se fait à l'aide de OneGet par l
 
 # Windows Server Container Hello World
 
-    docker run --rm microsoft/windowsservercore powershell /c echo Hello GlobalMentorWeek2016!
-    docker run --rm microsoft/nanoserver powershell /c echo Hello GlobalMentorWeek2016!
+    docker run --rm microsoft/windowsservercore cmd /c echo Hello`, from DockerGlobalMentorWeek2016!
+    docker run --rm microsoft/nanoserver cmd /c echo Hello`, from DockerGlobalMentorWeek2016!
     docker run --rm microsoft/sample-dotnet
 
 # Le contenu d'un Windows Server Container
@@ -68,11 +68,11 @@ Le deploiement automatisé du CS Docker Engine se fait à l'aide de OneGet par l
 
 # Utiliser un Dockerfile
 
-    powershell new-item c:\GlobalMentorWeek2016\Dockerfile -Force
-    notepad c:\GlobalMentorWeek2016\Dockerfile
+    powershell new-item c:\DockerGlobalMentorWeek2016\Dockerfile -Force
+    notepad c:\DockerGlobalMentorWeek2016\Dockerfile
     FROM microsoft/iis
-    RUN echo "Hello GlobalMentorWeek2016! - Dockerfile" > c:\inetpub\wwwroot\index.html
-    docker build -t <user>/DGMW-iis-dockerfile c:\GlobalMentorWeek2016
+    RUN echo "Hello DockerGlobalMentorWeek2016! - Dockerfile" > c:\inetpub\wwwroot\index.html
+    docker build -t <user>/DGMW-iis-dockerfile c:\DockerGlobalMentorWeek2016
     docker run -d -p 8080:80 <user>/DGMW-iis-dockerfile ping -t localhost
     docker ps
     docker rm -f <container name>
@@ -111,7 +111,7 @@ Le deploiement automatisé du CS Docker Engine se fait à l'aide de OneGet par l
 
 ## Deploiement ASP.NET Core MVC MusicStore app
 
-    cd c:\GlobalMentorWeek2016
+    cd c:\DockerGlobalMentorWeek2016
     git clone https://github.com/friism/Musicstore
     cd Musicstore
     docker-compose -f .\docker-compose.windows.yml build
