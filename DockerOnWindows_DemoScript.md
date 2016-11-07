@@ -39,13 +39,13 @@ Le deploiement automatisé du CS Docker Engine se fait à l'aide de OneGet par l
     docker pull microsoft/windowsservercore
     docker pull microsoft/nanoserver
 
-# Windows Container Hello World
+# Windows Server Container Hello World
 
     docker run --rm microsoft/windowsservercore powershell /c echo Hello GlobalMentorWeek2016!
     docker run --rm microsoft/nanoserver powershell /c echo Hello GlobalMentorWeek2016!
     docker run --rm microsoft/sample-dotnet
 
-# Le contenu d'un Windows Container
+# Le contenu d'un Windows Server Container
 
     docker run --rm -it microsoft/windowsservercore powershell
     Get-Process
