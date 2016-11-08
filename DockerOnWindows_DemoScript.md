@@ -77,6 +77,12 @@ Le deploiement automatisé du CS Docker Engine se fait à l'aide de OneGet par l
     docker ps
     docker rm -f <container name>
 
+# Se connecter à un Windows Container en cours d'execution
+
+    docker ps
+    docker exec -it <ID> cmd
+    docker exec -it <ID> powershell
+
 # Publier son Container sur DockerHub
 
     docker login
