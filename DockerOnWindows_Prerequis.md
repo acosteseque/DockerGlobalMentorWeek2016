@@ -34,7 +34,7 @@ Note : Il ne faut pas mixer les hyperviseurs, si VirtualBox ou VMware Workstatio
 
 [Docker Toolbox](https://docker.github.io/toolbox/) ne permet que le support des containers Linux pas Windows
 
-# 3 - Recuperer les Base Images Microsoft
+# 2 - Recuperer les Base Images Microsoft
 
 Lancer PowerShell
 
