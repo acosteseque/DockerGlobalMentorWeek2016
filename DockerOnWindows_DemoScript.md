@@ -1,4 +1,4 @@
-# Docker Global Mentor Week, Windows Labs Sommaire
+# Docker Global Mentor Week, Windows Containers Labs Sommaire
 
   * [Prerequis](#chapter-0)
   * [Install CS Docker Engine sur Windows Server 2016](#chapter-1)
@@ -18,7 +18,7 @@
 
 # Prerequis <a id="chapter-0"></a>
 
-[Avant de venir à la Docker Global Mentor Week](DockerOnWindows_Prerequis)
+[Avant de venir à la Docker Global Mentor Week](DockerOnWindows_Prerequis.md)
 
 # Install CS Docker Engine sur Windows Server 2016 <a id="chapter-1"></a>
 
